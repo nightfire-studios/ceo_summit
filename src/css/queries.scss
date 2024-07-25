@@ -1,0 +1,551 @@
+@media screen and (min-width:1920px) {
+    body {
+        
+        section {
+            
+            p {
+                font-size: 1.2rem !important;
+            }
+
+            .container {
+                width: 60% !important;
+            }
+
+            
+        }
+    }
+}
+
+@media (max-width:1500px) {
+    body {
+        section {
+            .program_parent {
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1367px) {
+    body {
+
+        section {
+
+            .container {
+                width: 75% !important;
+            }
+
+            .banner_parent {
+                .banner {
+                    .banner_content {
+                        // width: max(305px, 40%);
+                        // height: max(550px, 55vh);
+
+                        .content {
+
+                            h1 {
+                                font-size: clamp(.8rem, 2.5vw, 3rem);
+                                width: 200px;
+                            }
+
+                            h4 {
+                                margin-bottom: 10px;
+                            }
+
+                            button {
+                                padding: 15px 0;
+                                font-size: .9rem;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1025px) {
+    body {
+        p {
+            font-size: .9rem;
+        }
+
+        section {
+
+            .container {
+                width: 85% !important;
+            }
+
+            .banner_parent {
+                .banner {
+                    .banner_content {
+
+                        .content {
+
+                            .logo {
+                                width: max(240px, 60%)
+                            }
+
+                            h1 {
+                                font-size: clamp(.8rem, 2.5vw, 3rem);
+                                width: 200px;
+                            }
+
+                            p {
+                                font-size: .7rem;
+                            }
+
+                            h4 {
+                                margin-bottom: 10px;
+                            }
+
+                            a {
+                                button {
+                                    padding: 15px 0;
+                                    font-size: .9rem;
+                                    margin-top: 10px;
+                                }
+                            }
+
+                        }
+
+                        .content_two {
+                            .button_container {
+                                button {
+                                    padding: 15px 0;
+                                }
+                            }
+                        }
+                    }
+
+                    // .down_arrow {
+                    //     padding: 10px;
+                    //     border-radius: 50%;
+                    //     margin-top: 30px;
+                    //     width: max(20px, 30%);
+                    //     height: max(20px, 3vh);
+                    //     display: grid;
+                    //     place-items: center;
+                    //     cursor: pointer;
+
+                    //     img {
+                    //         width: 70%;
+                    //     }
+                    // }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    $main-spacing: 50px;
+
+    body {
+        section {
+
+            .container {
+                width: 90% !important;
+            }
+
+            h1 {
+                font-weight: bold !important;
+            }
+
+            //Banner styling begins here...
+            .banner_parent {
+                .banner {
+                    background-size: 200%;
+
+                    a{
+                        bottom: 1%;
+                    }
+
+                    .banner_content {
+                        flex-direction: column;
+                        justify-content: center;
+                        width: max(340px, 90%);
+                        height: max(470px, 55dvh);
+
+                        .content {
+                            width: 80%;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                            margin: 0 auto;
+
+                            .logo {
+                                padding-bottom: 10px;
+                            }
+
+
+                        }
+
+                        .content_two {
+                            width: 100%;
+                            padding-top: 15px;
+
+                            .heading{
+                                h3{
+                                    width: 90%;
+                                }
+                            }
+
+                            h3:nth-child(1) {
+                                font-size: clamp(.9rem, 1.25vw, 2rem);;
+                            }
+
+                            h3:nth-child(2) {
+                                color: #f05a28;
+                                font-size: clamp(.9rem, 1.3vw, 2rem);
+                            }
+
+                            .button_container {
+                                a{
+                                    button {
+                                        font-size: clamp(.9rem, 1.2vw, 1.4rem);
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            //Countdown styling begins here...
+            .count_down_container{
+                margin-top: 80px;
+                .container{
+                    .countdown{
+                        .flexbox{
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+
+            //Program outline styling begins here...
+            .program_parent {
+                margin-top: $main-spacing;
+
+                .container {
+
+                    .heading{
+                        img{
+                            width: 8%;
+                        }
+                    }
+
+                    h1 {
+                        font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+                    }
+
+                    .program_container {
+                        .header {
+                            font-size: clamp(1.5rem, 2vw, 2rem);
+                        }
+
+                        .program_body {
+                            padding: 50px 30px 50px;
+
+                            .program_calender {
+                                .program_flexbox {
+                                    .flex:first-child {
+                                        display: none;
+                                    }
+
+                                    .flex {
+                                        .mobile_time {
+                                            display: block;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //Accomodation styling begins here...
+            .accomodation_parent {
+                margin-top: $main-spacing;
+
+                .container {
+
+                    .header {
+                        h1 {
+                            font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+                            margin-bottom: 0;
+                        }
+
+                        .acc_img{
+                            width: 12%;
+                        }
+                    }
+
+                    .sub_header{
+                        h2{
+                            text-align: center;
+                        }
+                    }
+
+                    .flexbox {
+                        flex-direction: column;
+
+                        .flex {
+                            width: 100%;
+
+                            &:nth-child(2) {
+                                height: 250px;
+                                justify-content: center;
+                                position: relative;
+                                z-index: -1;
+
+                                img {
+                                    width: 80%;
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    .flights_parent {
+                        margin-top: 60px;
+
+                        .flight_header{
+                            .flight_icon{
+                                width: 8%;
+                            }
+                        }
+
+                        .flight_content{
+                            .flight_flexbox{
+                                margin: 0 5px;
+                                gap: 10px;
+                                div{
+                                    width: 30%;
+                                }
+
+                                p{
+                                    font-size: .8rem;
+                                    margin: 0;
+                                }
+                            }
+
+                            .flight_details{
+                                .flights{
+                                    .line{
+                                        width: 5%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .button_holder{
+                        display: grid;
+                        place-items: center;
+
+                        button{
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+
+            //visa information styling begins here..
+            .visa_parent {
+                margin-top: $main-spacing;
+
+                .container {
+
+                    .header {
+                        .visa_icon{
+                            width: 7%;
+                        }
+                    }
+
+                    .details {
+                        ol {
+                            padding-left: 20px;
+
+                            li{
+                                font-size: .9rem;
+                                padding-left: 5px;
+                            }
+                        }
+
+                        h2{
+                            text-align: center;
+                        }
+                    }
+
+                    .button_holder {
+                        button {
+                            padding: 10px 10px;
+                            font-size: .8rem;
+
+                            &:nth-child(2) {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            //Weather section styling begins here...
+            :is(
+                .weather_parent,
+                .what-to-pack_parent
+            ){
+                .container{
+                    .heading{
+                        .weather_icon{
+                            width: 10%;
+                        }
+
+                        .pack_icon{
+                            width: 6%;
+                        }
+                    }
+                }
+            }
+
+            //Speakers styling begins here...
+            .speakers_parent {
+                margin-top: $main-spacing;
+
+                .container {
+                    width: 70% !important;
+
+                    .header {
+                        h1 {
+                            font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+                        }
+                    }
+
+                    .flexbox {
+                        flex-direction: column;
+
+                        .speaker {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            //Footer styling begins here...
+            footer {
+                margin-top: $main-spacing;
+
+                .complete_registration{
+                    padding: 40px 0;
+                    .container{
+                        flex-direction: column;
+                        gap: 20px;
+
+                        button{
+                            padding: 20px 40px;
+                        }
+                    }
+                }
+
+                .footer_parent {
+                    .container {
+                        .flexbox {
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+
+                            .flex {
+                                &:nth-child(2) {
+                                    p {
+                                        width: 80%;
+                                    }
+                                }
+
+                                &:nth-child(3){
+                                    align-items: flex-start;
+
+                                    .socials{
+                                        ul{
+                                            justify-content: flex-start;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//Container queries
+
+@container program (width < 1100px) {
+    body {
+        
+        section {
+            .program_parent {
+
+                .container {
+                    .program_container {
+                       
+                        .header {
+                            font-size: clamp(1rem, 2vw, 2.5rem);
+                            font-weight: bold;
+                        }
+
+                        .program_body {
+                            .program_calender {
+                                .program_flexbox {
+                                    .flex {
+                                        p {
+                                            font-size: .9rem;
+                                        }
+                                    }
+
+                                    .flex:nth-child(2) {
+                                        .line {
+                                            height: 50px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@container banner (height > 1023px) and (max-width:1367px){
+   
+    body{
+        section{
+            .banner_parent{
+                .banner{
+                    .banner_content{
+                        width: max(600px, 60%);
+                        height: max(200px,25vh);
+
+                        .content{
+                            .logo{
+                               width: max(200px, 40%); 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "public": "dist",
+    "site": "4dx-ventures",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
