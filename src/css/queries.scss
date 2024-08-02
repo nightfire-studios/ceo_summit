@@ -233,13 +233,16 @@
 
                     .heading{
                         img{
-                            width: 8%;
+                            width: 6.5%;
+                        }
+
+                        h1 {
+                            font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+                            margin: 0 10px;
                         }
                     }
 
-                    h1 {
-                        font-size: clamp(1.8rem, 2.5vw, 2.5rem);
-                    }
+                   
 
                     .program_container {
                         .header {
@@ -276,8 +279,9 @@
 
                     .header {
                         h1 {
-                            font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+                            font-size: clamp(2.1rem, 2.5vw, 2.5rem);
                             margin-bottom: 0;
+                            margin: 0 10px;
                         }
 
                         .acc_img{
@@ -317,7 +321,11 @@
 
                         .flight_header{
                             .flight_icon{
-                                width: 8%;
+                                width: 7.5%;
+                            }
+
+                            h1{
+                                margin: 0 10px;
                             }
                         }
 
@@ -363,8 +371,14 @@
                 .container {
 
                     .header {
+                        gap: 5px;
                         .visa_icon{
-                            width: 7%;
+                            width: 5.5%;
+                        }
+
+                        h1{
+                            // font-size: clamp();
+                            margin: 0 5px;
                         }
                     }
 
@@ -403,13 +417,15 @@
             ){
                 .container{
                     .heading{
+                        gap: 10px;
                         .weather_icon{
                             width: 10%;
                         }
 
                         .pack_icon{
-                            width: 6%;
+                            width: 4.7%;
                         }
+                        
                     }
                 }
             }
@@ -486,6 +502,8 @@
 
 }
 
+
+
 //Container queries
 
 @container program (width < 1100px) {
@@ -548,4 +566,21 @@
     }
 
     
+}
+
+@container visa (width < 387px){
+    body{
+        section{
+            .visa_parent{
+                .container{
+                    .header{
+                        
+                        h1{
+                            font-size: clamp(1.7rem,7.5vw,3.5rem);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

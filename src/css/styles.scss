@@ -6,7 +6,7 @@ $main-spacing: 120px;
 $section_spacing:60px;
 $border-gray:rgb(234, 234, 234);
 $countdown_color:#762877;
-$headings:clamp(2rem, 3.5vw, 3.5rem);
+$headings:clamp(2.2rem, 3.5vw, 3.5rem);
 
 html {
     scroll-behavior: smooth;
@@ -265,20 +265,23 @@ body {
                 
                 .heading{
                     display: flex;
-                    align-items: center;
+                    align-items: flex-end;
                     justify-content: center;
                     margin: 10px;
+                    // border: red 1px solid;
                     h1 {
                         
                         text-align: center;
                         font-size: $headings;
                         font-weight: bold;
                         color: $color-secondary;
-                        margin: 0 15px;
+                        margin: 0 20px;
+                        line-height: .7;
+                        // height: 67px;
                     }
 
                     img{
-                        width: 5%;
+                        width: 3.7%;
                     }
                 }
 
@@ -409,11 +412,12 @@ body {
                     color: $color-secondary;
                     display: flex;
                     justify-content: center;
+                    align-items: flex-end;
 
                     .acc_img{
-                        width: 7%;
+                        width: 6.1%;
                         display: grid;
-                        place-items: center;
+                        place-items: end;
                         img{
                             width: 100%;
                         }
@@ -424,6 +428,7 @@ body {
                         font-weight: bold;
                         font-size: $headings;
                         margin:0 20px;
+                        line-height: .7;
                     }
 
                     
@@ -513,9 +518,10 @@ body {
                     .flight_header{
                         display: flex;
                         justify-content: center;
+                        align-items: flex-end;
 
                         .flight_icon{
-                            width: 5%;
+                            width: 3.8%;
                             display: grid;
                             place-items: center;
 
@@ -527,7 +533,8 @@ body {
                         h1{
                          font-size: $headings;
                          color: $color-secondary;
-                         margin: 0 20px;   
+                         margin: 0 20px;
+                         line-height: .7;   
                         }
                     }
 
@@ -590,7 +597,7 @@ body {
             }
         }
 
-        //Visa Information styling begins here...
+        //Travel Requirements styling begins here...
         .visa_parent {
             margin-top: $section_spacing;
             background-image: url(../images/pattern_3.png);
@@ -603,10 +610,14 @@ body {
                     text-align: center;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: flex-end;
+                    container-type: inline-size;
+                    container-name: visa;
 
                     .visa_icon{
-                        width: 3%;
+                        width: 2.7%;
+                        display: flex;
+                        align-items: flex-end;
 
                         img{
                             width: 100%;
@@ -618,6 +629,7 @@ body {
                         font-size: $headings;
                         color: $color-secondary;
                         margin: 0 20px;
+                        line-height: .7;
                     }
                 }
 
@@ -655,14 +667,17 @@ body {
                         margin-top: 40px;
                         color: $color-secondary;
                     }
+                    b{
+                        color: $color-secondary;
+                    }
 
                     p {
                         &:nth-child(1){
                             font-weight: bold;
                         }
                        :is(&:nth-child(5),
-                       &:nth-child(9),
-                       &:nth-child(10)){
+                       &:nth-child(10),
+                       &:nth-child(11)){
                             color: $color-primary;
                             display: flex;
                             align-items: center;
@@ -707,12 +722,12 @@ body {
             .container{
                 .heading{
                     display: flex;
-                        text-align: flex-end;
+                        align-items: flex-end;
                         justify-content: center;
-                        gap: 20px;
+                        gap: 15px;
 
                     .weather_icon{
-                        width: 6%;
+                        width: 4.5%;
                         display: grid;
                         place-items: center;
                         img{
@@ -721,7 +736,7 @@ body {
                     }
 
                     .pack_icon{
-                        width: 4%;
+                        width: 2.3%;
                         display: grid;
                         place-items: center;
                         img{
@@ -733,6 +748,7 @@ body {
                         margin: 0;
                         font-size: $headings;
                         color: $color-secondary;
+                        line-height: .7;
                     }
                 }
             }
@@ -835,6 +851,22 @@ body {
                 
             }
 
+            .inquiries_section{
+                background-color: $color-secondary;
+                text-align: center;
+
+                h1{
+                    margin: 0;
+                    color: white;
+                    padding: 20px 0;
+
+                    a{
+                        text-decoration: none;
+                        color:white;
+                    }
+                }
+            }
+
             .footer_parent {
                 background-color: $color-primary;
                 padding: 80px 0;
@@ -879,7 +911,7 @@ body {
                                 width: 70%;
                                 display: flex;
                                 flex-direction: column;
-                                align-items: flex-end;
+                                align-items: center;
 
                                 .socials{
                                    
@@ -888,7 +920,7 @@ body {
                                         padding-left: 0;
                                         display: inline-flex;
                                         gap: 15px;
-                                        justify-content: flex-end;
+                                        justify-content: center;
                                         margin: 0;
 
                                         a{

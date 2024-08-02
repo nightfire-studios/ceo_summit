@@ -142,10 +142,11 @@
   }
 
   body section .program_parent .container .heading img {
-    width: 8%;
+    width: 6.5%;
   }
 
-  body section .program_parent .container h1 {
+  body section .program_parent .container .heading h1 {
+    margin: 0 10px;
     font-size: clamp(1.8rem, 2.5vw, 2.5rem);
   }
 
@@ -171,8 +172,8 @@
   }
 
   body section .accomodation_parent .container .header h1 {
-    margin-bottom: 0;
-    font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+    margin: 0 10px;
+    font-size: clamp(2.1rem, 2.5vw, 2.5rem);
   }
 
   body section .accomodation_parent .container .header .acc_img {
@@ -207,7 +208,11 @@
   }
 
   body section .accomodation_parent .container .flights_parent .flight_header .flight_icon {
-    width: 8%;
+    width: 7.5%;
+  }
+
+  body section .accomodation_parent .container .flights_parent .flight_header h1 {
+    margin: 0 10px;
   }
 
   body section .accomodation_parent .container .flights_parent .flight_content .flight_flexbox {
@@ -241,8 +246,16 @@
     margin-top: 50px;
   }
 
+  body section .visa_parent .container .header {
+    gap: 5px;
+  }
+
   body section .visa_parent .container .header .visa_icon {
-    width: 7%;
+    width: 5.5%;
+  }
+
+  body section .visa_parent .container .header h1 {
+    margin: 0 5px;
   }
 
   body section .visa_parent .container .details ol {
@@ -267,12 +280,16 @@
     margin: 0;
   }
 
+  body section :is(.weather_parent, .what-to-pack_parent) .container .heading {
+    gap: 10px;
+  }
+
   body section :is(.weather_parent, .what-to-pack_parent) .container .heading .weather_icon {
     width: 10%;
   }
 
   body section :is(.weather_parent, .what-to-pack_parent) .container .heading .pack_icon {
-    width: 6%;
+    width: 4.7%;
   }
 
   body section .speakers_parent {
@@ -354,6 +371,12 @@
 
   body section .banner_parent .banner .banner_content .content .logo {
     width: max(200px, 40%);
+  }
+}
+
+@container visa (width < 387px) {
+  body section .visa_parent .container .header h1 {
+    font-size: clamp(1.7rem, 7.5vw, 3.5rem);
   }
 }
 /*# sourceMappingURL=index.94204eff.css.map */

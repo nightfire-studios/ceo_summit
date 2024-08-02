@@ -235,7 +235,7 @@ body section .program_parent .container {
 
 body section .program_parent .container .heading {
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin: 10px;
   display: flex;
 }
@@ -243,13 +243,14 @@ body section .program_parent .container .heading {
 body section .program_parent .container .heading h1 {
   text-align: center;
   color: #f05a28;
-  margin: 0 15px;
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  margin: 0 20px;
+  font-size: clamp(2.2rem, 3.5vw, 3.5rem);
   font-weight: bold;
+  line-height: .7;
 }
 
 body section .program_parent .container .heading img {
-  width: 5%;
+  width: 3.7%;
 }
 
 body section .program_parent .container .program_container {
@@ -366,12 +367,13 @@ body section .accomodation_parent .container .header {
   text-align: center;
   color: #f05a28;
   justify-content: center;
+  align-items: flex-end;
   display: flex;
 }
 
 body section .accomodation_parent .container .header .acc_img {
-  place-items: center;
-  width: 7%;
+  place-items: end;
+  width: 6.1%;
   display: grid;
 }
 
@@ -381,8 +383,9 @@ body section .accomodation_parent .container .header .acc_img img {
 
 body section .accomodation_parent .container .header h1 {
   margin: 0 20px;
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-size: clamp(2.2rem, 3.5vw, 3.5rem);
   font-weight: bold;
+  line-height: .7;
 }
 
 body section .accomodation_parent .container .sub_header h2 {
@@ -451,12 +454,13 @@ body section .accomodation_parent .container .flights_parent {
 
 body section .accomodation_parent .container .flights_parent .flight_header {
   justify-content: center;
+  align-items: flex-end;
   display: flex;
 }
 
 body section .accomodation_parent .container .flights_parent .flight_header .flight_icon {
   place-items: center;
-  width: 5%;
+  width: 3.8%;
   display: grid;
 }
 
@@ -467,7 +471,8 @@ body section .accomodation_parent .container .flights_parent .flight_header .fli
 body section .accomodation_parent .container .flights_parent .flight_header h1 {
   color: #f05a28;
   margin: 0 20px;
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+  line-height: .7;
 }
 
 body section .accomodation_parent .container .flights_parent .flight_content {
@@ -535,12 +540,15 @@ body section .visa_parent {
 body section .visa_parent .container .header {
   text-align: center;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   display: flex;
+  container: visa / inline-size;
 }
 
 body section .visa_parent .container .header .visa_icon {
-  width: 3%;
+  align-items: flex-end;
+  width: 2.7%;
+  display: flex;
 }
 
 body section .visa_parent .container .header .visa_icon img {
@@ -550,8 +558,9 @@ body section .visa_parent .container .header .visa_icon img {
 body section .visa_parent .container .header h1 {
   color: #f05a28;
   margin: 0 20px;
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-size: clamp(2.2rem, 3.5vw, 3.5rem);
   font-weight: bold;
+  line-height: .7;
 }
 
 body section .visa_parent .container .button_holder {
@@ -584,22 +593,26 @@ body section .visa_parent .container .details h2 {
   margin-top: 40px;
 }
 
+body section .visa_parent .container .details b {
+  color: #f05a28;
+}
+
 body section .visa_parent .container .details p:first-child {
   font-weight: bold;
 }
 
-:is(body section .visa_parent .container .details p:nth-child(5), body section .visa_parent .container .details p:nth-child(9), body section .visa_parent .container .details p:nth-child(10)) {
+:is(body section .visa_parent .container .details p:nth-child(5), body section .visa_parent .container .details p:nth-child(10), body section .visa_parent .container .details p:nth-child(11)) {
   color: #00a69c;
   align-items: center;
   gap: 10px;
   display: flex;
 }
 
-:is(body section .visa_parent .container .details p:nth-child(5), body section .visa_parent .container .details p:nth-child(9), body section .visa_parent .container .details p:nth-child(10)) img {
+:is(body section .visa_parent .container .details p:nth-child(5), body section .visa_parent .container .details p:nth-child(10), body section .visa_parent .container .details p:nth-child(11)) img {
   width: 2%;
 }
 
-:is(body section .visa_parent .container .details p:nth-child(5), body section .visa_parent .container .details p:nth-child(9), body section .visa_parent .container .details p:nth-child(10)) a {
+:is(body section .visa_parent .container .details p:nth-child(5), body section .visa_parent .container .details p:nth-child(10), body section .visa_parent .container .details p:nth-child(11)) a {
   color: #00a69c;
 }
 
@@ -622,15 +635,15 @@ body section :is(.weather_parent, .what-to-pack_parent) {
 }
 
 body section :is(.weather_parent, .what-to-pack_parent) .container .heading {
-  text-align: flex-end;
   justify-content: center;
-  gap: 20px;
+  align-items: flex-end;
+  gap: 15px;
   display: flex;
 }
 
 body section :is(.weather_parent, .what-to-pack_parent) .container .heading .weather_icon {
   place-items: center;
-  width: 6%;
+  width: 4.5%;
   display: grid;
 }
 
@@ -640,7 +653,7 @@ body section :is(.weather_parent, .what-to-pack_parent) .container .heading .wea
 
 body section :is(.weather_parent, .what-to-pack_parent) .container .heading .pack_icon {
   place-items: center;
-  width: 4%;
+  width: 2.3%;
   display: grid;
 }
 
@@ -651,7 +664,8 @@ body section :is(.weather_parent, .what-to-pack_parent) .container .heading .pac
 body section :is(.weather_parent, .what-to-pack_parent) .container .heading h1 {
   color: #f05a28;
   margin: 0;
-  font-size: clamp(2rem, 3.5vw, 3.5rem);
+  font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+  line-height: .7;
 }
 
 body section .speakers_parent {
@@ -738,6 +752,22 @@ body section footer .complete_registration .container button:hover {
   background-color: #f05a28;
 }
 
+body section footer .inquiries_section {
+  text-align: center;
+  background-color: #f05a28;
+}
+
+body section footer .inquiries_section h1 {
+  color: #fff;
+  margin: 0;
+  padding: 20px 0;
+}
+
+body section footer .inquiries_section h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
 body section footer .footer_parent {
   background-color: #00a69c;
   padding: 80px 0;
@@ -772,13 +802,13 @@ body section footer .footer_parent .container .flexbox .flex:nth-child(2) p {
 
 body section footer .footer_parent .container .flexbox .flex:nth-child(3) {
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   width: 70%;
   display: flex;
 }
 
 body section footer .footer_parent .container .flexbox .flex:nth-child(3) .socials ul {
-  justify-content: flex-end;
+  justify-content: center;
   gap: 15px;
   margin: 0;
   padding-left: 0;

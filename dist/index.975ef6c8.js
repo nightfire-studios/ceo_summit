@@ -635,15 +635,18 @@ if (mobile_view.matches) program_info.forEach((items)=>{
     const second = 1000, minute = second * 60, hour = minute * 60, day = hour * 24;
     //I'm adding this section so I don't have to keep updating this pen every year :-)
     //remove this if you don't need it
-    let today = new Date(), dd = String(today.getDate()).padStart(2, "0"), mm = String(today.getMonth() + 1).padStart(2, "0"), yyyy = today.getFullYear(), nextYear = yyyy + 1, dayMonth = "11/03/", birthday = dayMonth + yyyy;
+    let today = new Date(), dd = String(today.getDate()).padStart(2, "0"), mm = String(today.getMonth() + 1).padStart(2, "0"), yyyy = today.getFullYear(), nextYear = yyyy + 1, dayMonth = "11/3/", birthday = dayMonth + yyyy;
+    console.log(birthday);
     today = mm + "/" + dd + "/" + yyyy;
-    if (today > birthday) birthday = dayMonth + nextYear;
     //end
     const countDown = new Date(birthday).getTime(), x = setInterval(function() {
         const now = new Date().getTime(), distance = countDown - now;
         days_container.innerText = Math.floor(distance / day), hours_container.innerText = Math.floor(distance % day / hour), mins_container.innerText = Math.floor(distance % hour / minute), secs_container.innerText = Math.floor(distance % minute / second);
         //do something later when date is reached
-        if (distance < 0) clearInterval(x);
+        if (distance < 0) {
+            clearInterval(x);
+            days_container.innerText = "00", hours_container.innerText = "00", mins_container.innerText = "00", secs_container.innerText = "00";
+        }
     //seconds
     }, 0);
 })();

@@ -70,12 +70,15 @@ if (mobile_view.matches) {
     mm = String(today.getMonth() + 1).padStart(2, "0"),
     yyyy = today.getFullYear(),
     nextYear = yyyy + 1,
-    dayMonth = "11/03/",
+    dayMonth = "11/3/",
     birthday = dayMonth + yyyy;
+
+    console.log(birthday)
 
   today = mm + "/" + dd + "/" + yyyy;
   if (today > birthday) {
-    birthday = dayMonth + nextYear;
+    // Turn on to allow reset
+    // birthday = dayMonth + nextYear;
   }
   //end
 
@@ -94,6 +97,11 @@ if (mobile_view.matches) {
       if (distance < 0) {
 
         clearInterval(x);
+
+        days_container.innerText = '00',
+        hours_container.innerText ='00',
+        mins_container.innerText = '00',
+        secs_container.innerText = '00';
       }
       //seconds
     }, 0)
